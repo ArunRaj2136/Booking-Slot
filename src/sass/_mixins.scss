@@ -1,0 +1,61 @@
+@mixin flex {
+  display: -webkit-box; // old
+  display: -moz-box; // old
+  display: -ms-flexbox; // ie
+  display: -webkit-flex; // new
+  display: flex; // new
+}
+@mixin flexJustifiedBetween {
+  @include flex;
+  justify-content: space-between;
+}
+@mixin flexAlignEnd {
+  @include flex;
+  align-items: flex-end;
+}
+@mixin flexJustifiedCenter {
+  @include flex;
+  justify-content: center;
+}
+@mixin flexAlignCenter {
+  @include flex;
+  align-items: center;
+}
+@mixin flexColumnAlignCenter {
+  @include flex;
+  flex-direction: column;
+  align-items: center;
+}
+@mixin flexAlignJustifiedCenter {
+  @include flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flexAlignCenterJustifiedBetween {
+  @include flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flexAlignCenterJustifiedStart {
+  @include flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+@mixin flexColumnAlignStart {
+  @include flex;
+  align-items: flex-start;
+}
+@mixin flexColumnAlignStart {
+  @include flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+@mixin text-style {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #000000;
+}

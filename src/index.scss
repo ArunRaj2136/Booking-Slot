@@ -1,3 +1,6 @@
+@import "./sass/mixins";
+@import "./sass/variables";
+
 *,
 *::after,
 *::before {
@@ -7,6 +10,6 @@
 }
 body {
   height: 100vh;
-
+  @include flexAlignJustifiedCenter;
   font-family: "Roboto", sans-serif;
 }

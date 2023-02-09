@@ -1,0 +1,28 @@
+@import "./sass/mixins";
+@import "./sass/variables";
+
+.container {
+  width: 730px;
+  height: 268px;
+  background-color: $color-white;
+  padding: 41px 21px 7px 14px;
+  @include text-style;
+  border: 3px solid aqua;
+
+  .title {
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+  .inputs__container {
+    @include flexAlignCenterJustifiedBetween;
+    margin-bottom: 7px;
+  }
+
+  .timer__container {
+    width: 695px;
+    height: 36px;
+    margin: 14px 0;
+    background-color: $color-blue;
+    @include flex;
+  }
+}
