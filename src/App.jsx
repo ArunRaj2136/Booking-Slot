@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import "./app.scss";
+import { eventsData } from "../src/utils/eventsData";
 import Input from "./Components/input/Input";
+import Button from "./Components/button/Button";
 
 function App() {
   const [date, setDate] = useState();
   const [startTime, setStartTime] = useState();
   const [duration, setDuration] = useState();
 
+  const findAvailableSlots = () => {
+    console.log("arun");
+  };
   return (
     <div className="container">
       <p className="title">find a free time</p>
@@ -30,7 +35,7 @@ function App() {
           onChangeHandler={setDuration}
         />
       </div>
-      <button>Find</button>
+      <Button name="Find" onClick={findAvailableSlots} />
       <div className="timer__container"></div>
       <div className="indicators__container"></div>
     </div>

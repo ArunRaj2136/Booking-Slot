@@ -1,0 +1,11 @@
+@import "../../sass/variables";
+
+.button {
+  width: 71px;
+  height: 34px;
+  border-radius: 4px;
+  background-color: $color-blue;
+  color: $color-white;
+  text-transform: capitalize;
+  border: none;
+}
