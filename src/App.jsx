@@ -3,6 +3,7 @@ import "./app.scss";
 import { eventsData } from "../src/utils/eventsData";
 import Input from "./Components/input/Input";
 import Button from "./Components/button/Button";
+import Timer from "./Components/timer/Timer";
 
 function App() {
   const [date, setDate] = useState();
@@ -36,7 +37,11 @@ function App() {
         />
       </div>
       <Button name="Find" onClick={findAvailableSlots} />
-      <div className="timer__container"></div>
+      <div className="timer__container">
+        <Timer time="8:00am" />
+        <Timer time="9:00am" active="true" />
+        <Timer time="10:00am" />
+      </div>
       <div className="indicators__container"></div>
     </div>
   );
