@@ -7,7 +7,6 @@
   background-color: $color-white;
   padding: 41px 21px 7px 14px;
   @include text-style;
-  border: 3px solid aqua;
 
   .title {
     text-transform: uppercase;
@@ -23,6 +22,11 @@
     height: 36px;
     margin: 14px 0;
     background-color: $color-blue;
+    @include flex;
+  }
+
+  .indicators__container {
+    margin-top: 4px;
     @include flex;
   }
 }

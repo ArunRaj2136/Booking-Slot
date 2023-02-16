@@ -4,6 +4,7 @@ import { eventsData } from "../src/utils/eventsData";
 import Input from "./Components/input/Input";
 import Button from "./Components/button/Button";
 import Timer from "./Components/timer/Timer";
+import Indicators from "./Components/indicator/Indicator";
 
 function App() {
   const [date, setDate] = useState();
@@ -42,7 +43,10 @@ function App() {
         <Timer time="9:00am" active="true" />
         <Timer time="10:00am" />
       </div>
-      <div className="indicators__container"></div>
+      <div className="indicators__container">
+        <Indicators name="Busy" />
+        <Indicators name="Free" free="true" />
+      </div>
     </div>
   );
 }

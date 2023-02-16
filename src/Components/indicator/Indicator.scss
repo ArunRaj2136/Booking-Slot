@@ -1,0 +1,21 @@
+@import "../../sass/mixins";
+@import "../../sass/variables";
+
+.indicatorGroup {
+  @include flexAlignCenterJustifiedStart;
+  @include text-style;
+  margin-right: 10px;
+}
+.rectangle {
+  width: 15px;
+  height: 10px;
+  margin-right: 7px;
+}
+
+.free {
+  background-color: $color-timer-free;
+}
+
+.busy {
+  background-color: $color-timer-busy;
+}
